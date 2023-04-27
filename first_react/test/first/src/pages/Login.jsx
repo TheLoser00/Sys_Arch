@@ -9,6 +9,7 @@ function Login() {
         backgroundColor: "#0F3460",
         alignItems: "center",
         padding: "30px",
+        marginTop: "80px",
         borderRadius: "10px",
         boxShadow: "0px 3px 15px rgba(0, 0, 0, 0.2)"
     }

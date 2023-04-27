@@ -1,8 +1,8 @@
 import background from './images/space.png';
 import {Routes, Route} from 'react-router-dom';
-import logo from './images/logo.png'
-import Login from './pages/Login'
-import Register from './pages/Register'
+import Test from './pages/Test';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -23,6 +23,7 @@ function App() {
             <Route path='/' element={<Home/>}/>
             <Route path='/login' element={<Login/>} />
             <Route path='/register' element={<Register/>} />
+            <Route path='test' element={<Test/>} />
           </Routes>
       </div>
     </div>
