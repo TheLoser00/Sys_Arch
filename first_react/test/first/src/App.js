@@ -1,7 +1,11 @@
 import background from './images/space.png';
+import {Routes, Route} from 'react-router-dom';
 import logo from './images/logo.png'
+import Login from './pages/Login'
+import Register from './pages/Register'
 import './App.css';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -14,27 +18,13 @@ function App() {
       backgroundSize: 'cover',
     }}>
       <div>
-          <Navbar></Navbar>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/login' element={<Login/>} />
+            <Route path='/register' element={<Register/>} />
+          </Routes>
       </div>
-      
-      
-      
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '90vh',
-      }}>
-      
-      <h1 style={{color: '#E0ECE4', fontSize: '100px'}}>Welcome</h1>
-      
-      <div className="App">
-      <header>
-        <img src={logo} className="App-logo"/>
-      </header>
-      </div> 
-      </div>
-
     </div>
   );
 }
