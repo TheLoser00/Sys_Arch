@@ -38,9 +38,9 @@ function Login() {
                       type={field.type}
                       placeholder={field.placeholder}
                       onChange={(e) => {
-                        if (field.label == "Email Address") {
+                        if (field.label === "Email Address") {
                           setEmailAdd(e.target.value);
-                        } else if (field.label == "Password")
+                        } else if (field.label === "Password")
                           setPassword(e.target.value);
                       }}
                     />
